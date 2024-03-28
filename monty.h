@@ -40,7 +40,7 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-/* PROTOTYPES */
+/* PROTOTYPES: APPLICATIONS */
 FILE *openfile(char *filename);
 void montyexec(stack_t **stack, char *code,
 				char *param, unsigned int nline, char *staque);
