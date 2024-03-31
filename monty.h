@@ -54,5 +54,6 @@ void push(stack_t **stack, unsigned int param);
 void push_queue(stack_t **stack, unsigned int param);
 void pall(stack_t **stack, unsigned int line);
 void pint(stack_t **stack, unsigned int line);
+void pop(stack_t **stack, unsigned int line);
 
 #endif /* MONTY */

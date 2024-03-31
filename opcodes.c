@@ -70,18 +70,19 @@ int check_digits(char *str)
 }
 
 /**
-  * count_stack - Counts the number of elements in the stack
-  * @stack: The stack to count
-  * Return: Number of elements in the stack
-  */
+ * count_stack - Counts the number of elements in the stack
+ * @stack: The stack to count
+ * Return: Number of elements in the stack
+ */
 int count_stack(stack_t *stack)
 {
-	int lenght = 0;
+    int count = 0;
+    stack_t *current = stack;
 
-	while (stack != NULL)
-	{
-		++lenght;
-		stack = stack->next;
-	}
-	return (lenght);
+    while (current != NULL)
+    {
+        count++;
+        current = current->next;
+    }
+    return count;
 }
