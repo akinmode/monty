@@ -17,7 +17,7 @@ void push(stack_t **stack, unsigned int param)
 		exit(EXIT_FAILURE);
 	}
 
-	inode->n = atoi(param);
+	inode->n = param;
 	if (*stack)
 	{
 		inode->next = *stack;
@@ -49,7 +49,7 @@ void push_queue(stack_t **stack, unsigned int param)
 		exit(EXIT_FAILURE);
 	}
 
-	inode->n = atoi(param);
+	inode->n = param;
 	if (*stack)
 	{
 		current = *stack;
