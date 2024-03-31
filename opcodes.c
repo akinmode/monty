@@ -36,6 +36,7 @@ void (*check_funct(char *s))(stack_t **, unsigned int)
 		{ "push_queue", push_queue },
 		{ "pall", pall },
 		{ "pint", pint },
+		{ "pop", pop },
 		{ NULL, NULL }
 	};
 	int i = 0;
